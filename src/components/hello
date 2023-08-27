@@ -1,0 +1,19 @@
+const InputBox = ({label, variant, className, type, name, textChange, value}) => {
+  return (
+    <TextField onChange={textChange} value={value} className={className} label={label} variant={variant} type={type} name={name} />
+    
+  )
+}
+
+
+
+
+<InputBox
+                  type="email"
+                  name="email"
+                  value={formData.email}
+                  className="regInputEmail"
+                  textChange={handleTextChange}
+                  label="Email Address"
+                  variant="outlined"
+                />
